@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using tabuleiro;
 
-namespace xadrez_console.tabuleiro
+namespace tabuleiro
 {
     class Peca
     {
@@ -18,6 +18,11 @@ namespace xadrez_console.tabuleiro
             this.cor = cor;
             this.tab = tab;
             qteMovimentos = 0;
+        }
+
+        public void incrementarQteMovimentos()
+        {
+            qteMovimentos++;
         }
     }
 }
